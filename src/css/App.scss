@@ -1,0 +1,60 @@
+$background-color: #111111;
+$text-color: #ffffff;
+$primary-color: #00C805;
+$secondary-color: rgb(255, 90, 135);
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+  background: $background-color
+}
+
+.header-padding {
+  padding: 20px 0;
+}
+
+.table-row {
+	color: $primary-color !important;
+  cursor: pointer;
+}
+
+.list-items {
+  color: $primary-color;
+  list-style-type: none;
+}
+
+.app-logo {
+  padding-left: 10px;
+	width: 80px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.inline-header {
+  padding-left: 20px;
+}
+
+.breadcrumb {
+  padding-top: 10px;
+
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: $text-color;
+}
+
+
